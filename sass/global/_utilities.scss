@@ -1,0 +1,8 @@
+.br {
+    display: block;
+}
+
+.divider {
+    display: block;
+    @include divider($color-blue, before , true);
+}

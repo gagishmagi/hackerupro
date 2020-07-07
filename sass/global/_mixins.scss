@@ -1,0 +1,16 @@
+@mixin divider($clr: $color-blue, $pos: after, $is_between : false) {
+    &::#{$pos} {
+        content: "";
+        background-color: $clr;
+        height: 10px;
+        display: block;
+        width: 3em;
+        @if $pos == after {
+            margin-top: 1em;
+        } @else if $pos == before {
+            margin-bottom: 1em;
+        } @if $is_between == true {
+            margin: .3em 0;
+        }
+    }
+}

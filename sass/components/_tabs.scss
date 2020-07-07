@@ -1,0 +1,58 @@
+.tabs {
+    padding-top: 1em;
+    &__menu {
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid $color-blue;
+        margin: 0 3em;
+    }
+    &__btn {
+        background: none;
+        border: none;
+        outline: none;
+        padding: .5em 1em;
+        font-size: 1.125rem;
+        text-transform: uppercase;
+        font-weight: 300;
+        color: $color-blue;
+
+        &--active {
+
+            font-weight: 700;
+        }
+
+    }
+    &__content {
+        background-image: url(../../assets/img/mobile/services/services_blue.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        padding: 4em 1.6em;
+        display: none;
+
+        &--active {
+            display: block;
+        }
+
+
+
+        &--top {
+            text-align: center;
+        }
+        &--bottom {
+            text-align: left;
+        }
+
+    }
+
+
+    // the <ul> element
+    .slider {
+        padding: 1.5em 0;
+        // the <li> element
+        &__slide {
+            @include divider($color-blue, before);
+        }
+    }
+    
+}

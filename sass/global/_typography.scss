@@ -1,0 +1,37 @@
+.heading {
+    line-height: 1.1;
+    padding-bottom: .5em;
+    
+    font-size: 2rem;
+
+    &--lg {
+        font-size: 3em;
+        font-weight: 700;
+    }
+    &--sm {
+        font-size: 1.4rem;
+    }
+
+    &--light-text {
+        font-weight: 300;
+    }
+
+    &--blue {
+        color: $color-blue;
+    }
+
+}
+.para {
+    margin-bottom: 1.5em;
+    font-size: 1.125rem;
+
+    &--lg {
+        font-size: 1.3rem;
+    }
+    &--sm {
+        font-size: 1rem;
+    }
+    &--dark {
+        color: $color-dark;
+    }
+}

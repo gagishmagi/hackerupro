@@ -71,13 +71,13 @@
 
     <div class="tabs">
         <div class="tabs__menu">
-            <button class="tabs__btn" id="blueTeam">Blue Team</button>
-            <button class="tabs__btn" id="inBetween">In Between</button>
-            <button class="tabs__btn" id="redTeam">Red Team</button>
+            <button class="tabs__btn blueTeamBtn tabs__btn--active" data-for-team="blue">Blue Team</button>
+            <button class="tabs__btn betweenTeamBtn" data-for-team="between">In Between</button>
+            <button class="tabs__btn redTeamBtn" data-for-team="red">Red Team</button>
         </div>
 
         <!-- Blue Team Content -->
-        <div class="tabs__content tabs__content--active" id="blueTeamContent">
+        <div class="tabs__content tabs__content--active" data-team="blue">
             <div class="tabs__content--top">
                 <h3 class="heading heading--blue"> 
                     Blue 
@@ -90,7 +90,7 @@
      
         
             <!-- SLIDER -->
-            <ul class="slider" id="currentSlider">
+            <ul class="slider">
                 <li class="slider__slide">
                     <h4 class="heading heading--sm heading--blue"> Risk Assessment </h4>
                     <p class="para para--sm"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero aperiam sapiente a enim, pariatur doloribus tempora aut? Nesciunt explicabo tenetur ex. Voluptatum optio at officiis possimus animi. Nulla, tenetur accusamus. </p>
@@ -136,7 +136,7 @@
     <!-- END OF Blue Team Content -->
 
         <!-- In Between  Content -->
-        <div class="tabs__content" id="inBetweenContent">
+        <div class="tabs__content" data-team="between">
             <div class="tabs__content--top">
                 <h3 class="heading heading--blue"> 
                     In Between 
@@ -195,7 +195,7 @@
     <!-- END OF In Between Content -->
 
         <!-- Red Team Content -->
-        <div class="tabs__content" id="redTeamContent">
+        <div class="tabs__content" data-team="red">
             <div class="tabs__content--top">
                 <h3 class="heading heading--blue"> 
                    Red

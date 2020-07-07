@@ -15,12 +15,23 @@
         text-transform: uppercase;
         font-weight: 300;
         color: $color-blue;
+        cursor: pointer;
 
         &--active {
-
             font-weight: 700;
+            border-bottom: 2px solid;
+
+            .redTeamBtn {
+                color: red;
+                .tabs__btn--active {
+                    color: red;
+                }
+            }
+
+
         }
 
+    
     }
     &__content {
         background-image: url(../../assets/img/mobile/services/services_blue.png);

@@ -1,3 +1,6 @@
+:root {
+  --color-teams: #01adf9; }
+
 *,
 *::before,
 *::after {
@@ -48,10 +51,10 @@ ul {
   display: block; }
   .divider::before {
     content: "";
-    background-color: #1565c0;
-    height: 10px;
+    background-color: var(--color-teams);
+    height: 8px;
     display: block;
-    width: 3em;
+    width: 2em;
     margin-bottom: 1em;
     margin: .3em 0; }
 
@@ -92,8 +95,8 @@ ul {
   .tabs__menu {
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid #1565c0;
-    margin: 0 3em; }
+    margin: 0 2em;
+    position: relative; }
   .tabs__btn {
     background: none;
     border: none;
@@ -102,15 +105,31 @@ ul {
     font-size: 1.125rem;
     text-transform: uppercase;
     font-weight: 300;
-    color: #1565c0;
-    cursor: pointer; }
+    color: rgba(21, 101, 193, 0.6);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden; }
+    .tabs__btn::after {
+      content: "";
+      width: 100%;
+      height: 4px;
+      display: block;
+      background-color: currentColor;
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      transition: all .3s ease-in;
+      z-index: 100; }
     .tabs__btn--active {
-      font-weight: 700;
-      border-bottom: 2px solid; }
-      .tabs__btn--active .redTeamBtn {
-        color: red; }
-        .tabs__btn--active .redTeamBtn .tabs__btn--active {
-          color: red; }
+      font-weight: 700; }
+      .tabs__btn--active[data-for-team="blue"] {
+        color: #01adf9; }
+      .tabs__btn--active[data-for-team="between"] {
+        color: #606060; }
+      .tabs__btn--active[data-for-team="red"] {
+        color: #FE4164; }
+      .tabs__btn--active::after {
+        transform: translateY(-2px); }
   .tabs__content {
     background-image: url(../../assets/img/mobile/services/services_blue.png);
     background-size: cover;
@@ -118,6 +137,8 @@ ul {
     background-position: top;
     padding: 4em 1.6em;
     display: none; }
+    .tabs__content .heading {
+      color: var(--color-teams); }
     .tabs__content--active {
       display: block; }
     .tabs__content--top {
@@ -128,10 +149,10 @@ ul {
     padding: 1.5em 0; }
     .tabs .slider__slide::before {
       content: "";
-      background-color: #1565c0;
-      height: 10px;
+      background-color: var(--color-teams);
+      height: 8px;
       display: block;
-      width: 3em;
+      width: 2em;
       margin-bottom: 1em; }
 
 .list__item {
@@ -140,7 +161,7 @@ ul {
   align-items: center; }
   .list__item::before {
     content: "";
-    background-color: #1565c0;
+    background-color: var(--color-teams);
     height: 1em;
     width: 2px;
     display: inline-block;

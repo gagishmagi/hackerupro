@@ -2,9 +2,9 @@
     &::#{$pos} {
         content: "";
         background-color: $clr;
-        height: 10px;
+        height: 8px;
         display: block;
-        width: 3em;
+        width: 2em;
         @if $pos == after {
             margin-top: 1em;
         } @else if $pos == before {

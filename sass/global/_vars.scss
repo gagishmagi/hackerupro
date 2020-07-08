@@ -1,5 +1,14 @@
 // COLORS
 $color-blue: #1565c0;
+$color-blue-lighter: rgba(21, 101, 193, 0.6);
+$color-blue-light: #01adf9;
 $color-cyan: #00ffff;
+$color-red: #FE4164;
 $color-light: #fff;
 $color-dark: #263238;
+$color-dark-light: #606060;
+
+:root {
+    // Switch Between #01adf9 / #606060 / #FE4164
+    --color-teams: #01adf9;
+}

@@ -3,8 +3,10 @@
     &__menu {
         display: flex;
         justify-content: center;
-        border-bottom: 1px solid $color-blue;
-        margin: 0 3em;
+        margin: 0 2em;
+        position: relative;
+
+
     }
     &__btn {
         background: none;
@@ -14,21 +16,40 @@
         font-size: 1.125rem;
         text-transform: uppercase;
         font-weight: 300;
-        color: $color-blue;
+        color: $color-blue-lighter;
         cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        
+        &::after {
+            content: "";
+            width: 100%;
+            height: 4px;
+            display: block;
+            background-color: currentColor;
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            transition: all .3s ease-in;
+            z-index: 100;
+        }
 
         &--active {
             font-weight: 700;
-            border-bottom: 2px solid;
 
-            .redTeamBtn {
-                color: red;
-                .tabs__btn--active {
-                    color: red;
-                }
+            
+        &[data-for-team="blue"] {
+            color: $color-blue-light;
+        }
+        &[data-for-team="between"] {
+            color: $color-dark-light;
+        }
+        &[data-for-team="red"] {
+            color: $color-red;
+        }
+            &::after {
+                transform: translateY(-2px);
             }
-
-
         }
 
     
@@ -40,15 +61,17 @@
         background-position: top;
         padding: 4em 1.6em;
         display: none;
+        .heading {
+            color: var(--color-teams);
+        }
 
         &--active {
             display: block;
         }
 
-
-
         &--top {
             text-align: center;
+          
         }
         &--bottom {
             text-align: left;
@@ -62,8 +85,9 @@
         padding: 1.5em 0;
         // the <li> element
         &__slide {
-            @include divider($color-blue, before);
+            @include divider(var(--color-teams), before);
         }
     }
     
 }
+

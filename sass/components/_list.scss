@@ -5,7 +5,7 @@
         align-items: center;
         &::before {
             content: "";
-            background-color: $color-blue;
+            background-color: var(--color-teams);
             height: 1em;
             width: 2px;
             display: inline-block;

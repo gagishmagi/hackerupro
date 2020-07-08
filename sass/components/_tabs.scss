@@ -1,26 +1,32 @@
 .tabs {
-    padding-top: 1em;
+    &__wrapper {
+        background-image: 
+        linear-gradient(to bottom, $color-light, transparent),
+        url(../../assets/img/mobile/choice/choice_blue.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-blend-mode: overlay;
+    }
     &__menu {
         display: flex;
         justify-content: center;
         margin: 0 2em;
         position: relative;
-
-
     }
     &__btn {
         background: none;
         border: none;
         outline: none;
         padding: .5em 1em;
-        font-size: 1.125rem;
+        font-size: 1.2rem;
         text-transform: uppercase;
         font-weight: 300;
         color: $color-blue-lighter;
         cursor: pointer;
         position: relative;
         overflow: hidden;
-        
+
         &::after {
             content: "";
             width: 100%;
@@ -36,8 +42,6 @@
 
         &--active {
             font-weight: 700;
-
-            
         &[data-for-team="blue"] {
             color: $color-blue-light;
         }
@@ -55,13 +59,9 @@
     
     }
     &__content {
-        background-image: url(../../assets/img/mobile/services/services_blue.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: top;
-        padding: 4em 1.6em;
+        padding: 4em 2.5em;
         display: none;
-        .heading {
+        .heading, .sub-heading {
             color: var(--color-teams);
         }
 

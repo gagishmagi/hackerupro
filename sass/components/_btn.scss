@@ -1,11 +1,18 @@
 .btn {
-    border: 2px solid;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     background: none;
     font-family: inherit;
-    padding: .3em .8em; 
+    padding: .5em 1.8em; 
     color: currentColor;
     border-radius: 50px;
+    border: 1px solid;
+    font-weight: 700;
+
+    &--full {
+        background-color: $color-cyan;
+        color: $color-dark;
+        border-color: transparent;
+    }
     
     &--ghost {
         border-color: $color-light;

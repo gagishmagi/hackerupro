@@ -1,0 +1,40 @@
+.experts {
+    padding: 2em;
+    text-align: center;
+
+    .slider-experts {
+        margin-top: 6em;
+        .slick-list {
+            overflow: visible;
+        }
+    }
+
+
+    .expert-card {
+        background-color: $color-light;
+        box-shadow: 1px 1px 5px rgba($color-dark-light, .4);
+        padding: 2em;
+        min-height: 27rem;
+        position: relative;
+        margin: 0 1em;
+        height: 100%;
+
+  
+        &__img {
+            max-width: 7.5rem;
+            width: 100%;
+            height: auto;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50% );
+        }
+
+        &__content {
+            padding-top: 3em;
+        }
+    }
+
+
+}
+

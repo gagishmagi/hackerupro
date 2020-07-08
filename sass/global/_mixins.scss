@@ -4,13 +4,13 @@
         background-color: $clr;
         height: 8px;
         display: block;
-        width: 2em;
+        width: 2.4em;
         @if $pos == after {
             margin-top: 1em;
         } @else if $pos == before {
             margin-bottom: 1em;
         } @if $is_between == true {
-            margin: .3em 0;
+            margin: .5em 0;
         }
     }
 }

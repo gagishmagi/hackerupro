@@ -9,8 +9,7 @@ function setupTabs() {
       const rootStyle = document.documentElement.style;
 
         
-      $('.slider').slick('unslick');
-      $('.slider').slick('init');
+      $('.slider').slick('unslick').slick('init');
 
     
     if( tab === 'blue' ) {
@@ -48,6 +47,30 @@ $(document).ready(function() {
     waitForAnimate: false,
     easing: 'ease-in-out'
   });
+
+  $('.slider2').slick({
+    accessibility: true,
+    arrows: false,
+    mobileFirst: true,
+    slidesToShow: 3.2,
+    autoplay: true,
+    autoplaySpeed: 2000
+  });
+
+  $('.slider-experts').slick({
+    accessibility: true,
+    arrows: false,
+    mobileFirst: true,
+    slidesToShow: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+
+  });
+
+
+
+
+
 
 
   setupTabs();

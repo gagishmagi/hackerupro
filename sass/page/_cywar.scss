@@ -1,0 +1,16 @@
+.cywar {
+    padding: 3em 2em;
+    background-image: url(../../assets/img/mobile/cywar/cywar-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    text-align: center;
+
+    &__img {
+        max-width: 15em;
+        width: 100%;
+        height: auto;
+        margin: 2rem 0;
+    }
+}

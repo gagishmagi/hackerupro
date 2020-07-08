@@ -1,0 +1,53 @@
+.cards {
+    display: flex;
+    flex-direction: column;
+
+
+
+}
+
+.card {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    max-width: 85%;
+    padding: 3em;
+    color: $color-light;
+    
+
+
+    &:nth-child(odd) {
+            margin-left: auto;
+            margin-bottom: 2em;
+            .card__icon {
+                right: initial;
+                left: -30px;
+            }
+    }
+    
+
+
+
+    &--1 {
+        background-image: url(../../assets/img/mobile/services/card-1.png);
+    }
+    &--2 {
+        background-image: url(../../assets/img/mobile/services/card-2.png);
+    }
+
+
+    &__icon {
+        background-color: $color-light;
+        border-radius: 50%;
+        box-shadow: 1px 1px 10px rgba($color-dark-light, .4);
+        padding: .8em;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right: -30px;
+        svg {width: 2rem; height: 2rem;}
+    }
+}

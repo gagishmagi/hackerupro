@@ -3,9 +3,9 @@
     text-align: center;
 
     .slider-experts {
-        margin-top: 6em;
         .slick-list {
-            overflow: visible;
+            padding-top: 5em;
+            overflow-y: visible;
         }
     }
 
@@ -24,10 +24,12 @@
             max-width: 7.5rem;
             width: 100%;
             height: auto;
-            position: absolute;
+            // position: absolute;
+            margin: 0 auto;
+            margin-top: -5em;
             top: 0;
             left: 50%;
-            transform: translate(-50%, -50% );
+            // transform: translate(-50%, -50% );
         }
 
         &__content {

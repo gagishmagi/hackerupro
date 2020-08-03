@@ -1,4 +1,52 @@
 .contact {
-    text-align: center;
-    padding: 3em;
+
+    &__grid {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__img {
+        padding: 30px;
+        flex: 0 0 30em;
+        text-align: center;
+        img {
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+    }
+}
+
+.form {
+    padding: 20px;
+    flex: 0 0 70%;
+    display: flex;
+    justify-content: center;
+
+    &__col {
+        border: 1px dashed red;
+        padding: 15px;
+        flex: 1;
+    }
+
+    &__control {
+        width: 100%;
+        border-radius: 20px;
+        outline: none;
+        border: 1px solid gray;
+        padding: 5px 10px;
+        margin: 5px;
+    }
+
+    &__btn {
+        background-color: $color-cyan;
+        border: 0;
+        outline: 0;
+        -webkit-appearance: none;
+        appearance: none;
+
+        width: 100%;
+        border-radius: 20px;
+        padding: 7px;
+    }
 }

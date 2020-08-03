@@ -7,6 +7,10 @@
     border-radius: 50px;
     border: 1px solid;
     font-weight: 700;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    
 
     &--full {
         background-color: $color-cyan;

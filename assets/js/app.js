@@ -64,15 +64,39 @@ $(document).ready(function() {
     slidesToShow: 1,
     autoplay: true,
     autoplaySpeed: 2000,
+    responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 5,
+      }
+    }
+  
+  ]
 
   });
-
-
-
-
-
-
-
   setupTabs();
   
 });
+
+
+
+
+
+const expertsSlides = document.querySelectorAll('.expert-card');
+expertsSlides.forEach(expertSlide => {
+  expertSlide.addEventListener('click', () => {
+    expertsSlides.forEach(expertSlide => {
+      if( expertSlide.classList.contains('expert-card--active') ) {
+        expertSlide.classList.remove('expert-card--active')}
+      })
+    expertSlide.classList.add('expert-card--active');
+  })
+})
+
+
+
+
+
+
+

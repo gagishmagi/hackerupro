@@ -1,39 +1,86 @@
 .experts {
     padding: 2em;
     text-align: center;
-
     .slider-experts {
+        width: 100%;
         .slick-list {
-            padding-top: 5em;
+            padding: 5em 0;
             overflow-y: visible;
         }
     }
-
 
     .expert-card {
         background-color: $color-light;
         box-shadow: 1px 1px 5px rgba($color-dark-light, .4);
         padding: 2em;
-        min-height: 27rem;
         position: relative;
-        margin: 0 1em;
-        height: 100%;
+        transition: all .3s ease-out;
+        outline: 0;
+        cursor: pointer;
+
+        .expert-name {
+            color: $color-cyan;
+            font-weight: 700;
+            font-size: 1.3em;
+            font-family: inherit;
+            text-transform: uppercase;
+            position: absolute;
+        
+            bottom: 3em;
+            left: 50%;
+            transform: translate(-50%);
+            display: none;
+            @include respond(md) {
+                display: block;
+            }
+        }
+    @include respond(md) {
+        &--active {
+            background: white !important;
+            transform: scale(1.2);
+            z-index: 100;
+            padding: 4em 0;
+            .expert-card__img {
+                opacity: 1;
+            }
+            .expert-card__content  {
+                opacity: 1;
+            }
+
+            .expert-name {
+                display: none;
+            }
+     
+        }
+    }
+
+        @include respond(md) {
+            background: url(../../assets/img/experts/desktop-slider/Amir.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+        }
 
   
         &__img {
             max-width: 7.5rem;
             width: 100%;
             height: auto;
-            // position: absolute;
             margin: 0 auto;
             margin-top: -5em;
             top: 0;
             left: 50%;
-            // transform: translate(-50%, -50% );
+            @include respond(md) {
+                opacity: 0;
+            }
         }
 
         &__content {
             padding-top: 3em;
+            @include respond(md) {
+                opacity: 0;
+            }
         }
     }
 

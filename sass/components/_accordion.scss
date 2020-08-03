@@ -1,0 +1,75 @@
+.accordion {
+    padding: 1em 1.5em;
+
+    &__item {
+        background-color: rgba($color-cyan, .05);
+
+    }
+    &__btn {
+        width: 100%;
+        background-color: transparent;
+        padding: 7px 20px;
+        text-align: left;
+        border-radius: 30px;
+        color: $color-blue;
+        border: 1px solid currentColor;
+        font-family: inherit;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.125em;
+        cursor: pointer;
+        transition: all .2s ease-in;
+        outline: 0;
+
+        &:hover {
+            background-color: rgba($color-cyan, .1);
+        }
+    }
+    &__content {
+        transition: max-height .2s ease-in-out;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    &__para {
+        padding: 10px 0;
+    }
+
+    &__inner {
+        padding: 1em;
+        position: relative;
+        .btn {
+            position: absolute;
+            right: 3%;
+            bottom: 3%;
+        }
+    }
+    
+    &__title {
+        display: flex;
+        padding-bottom: 5px; 
+        span {
+            margin-right: .5em;
+            img {
+                max-width: 2rem;
+                width: 100%;
+            }
+        }       
+    }
+    &__list {
+        margin-left: 3em;
+        li {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            &::before {
+                content: "";
+                width: 2px;
+                height: 15px;
+                background-color: $color-blue;
+                display: inline-block;
+                margin-right: 10px;
+            }
+        }
+    }
+}

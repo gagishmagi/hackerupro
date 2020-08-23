@@ -1,4 +1,5 @@
 .contact {
+    text-align: center;
 
     &__grid {
         display: flex;
@@ -24,7 +25,6 @@
     justify-content: center;
 
     &__col {
-        border: 1px dashed red;
         padding: 15px;
         flex: 1;
     }
@@ -38,6 +38,36 @@
         margin: 5px;
     }
 
+
+    &__checkbox input[type=checkbox] {
+        display: none;
+    }
+
+    &__checkbox input[type=checkbox]~label:hover::before {
+        background: #ddd;
+    }
+
+    &__checkbox input:checked~label:before {
+        content: "";
+    }
+    &__checkbox input:active {
+        background-color: red;
+    }
+
+    &__checkbox label:before {
+        display: inline-block;
+        content: "\00a0";
+        /* Blank space */
+        width: 20px;
+        // margin-right: 5px;
+        // text-align: center;
+        // background: #f2f2f2;
+        background: #00FFFF 0% 0% no-repeat padding-box;
+        border: 1px solid #26323800;
+        border-radius: 15px;
+        opacity: 0.6;
+    }
+
     &__btn {
         background-color: $color-cyan;
         border: 0;
@@ -48,5 +78,9 @@
         width: 100%;
         border-radius: 20px;
         padding: 7px;
+    }
+
+    & .icon .fa {
+        color: $color-blue;
     }
 }

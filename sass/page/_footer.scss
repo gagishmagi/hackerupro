@@ -1,0 +1,43 @@
+footer {
+
+    background: transparent linear-gradient(254deg, var(--unnamed-color-00ffff) 0%, var(--unnamed-color-1565c0) 37%, var(--unnamed-color-41147e) 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(254deg, #00FFFF 0%, #1565C0 37%, #41147E 100%) 0% 0% no-repeat padding-box;
+    mix-blend-mode: multiply;
+    opacity: 1;
+    background-image: url('/assets/img/footer/footer.png') cover;
+
+    color: $color-light;
+
+    height: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: bold;
+
+    & .col-md-6 , .col-md-3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    & a {
+        color: $color-light;
+        text-decoration: none;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: lighter;
+        font-size: 22px;
+        color: rgba(255, 255, 255, 1);
+        letter-spacing: 0.2px;
+        text-transform: capitalize;
+        padding: 0 10px;
+    }
+
+    & .fa {
+        color: $color-light;
+    }
+}

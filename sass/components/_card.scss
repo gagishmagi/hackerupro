@@ -12,10 +12,11 @@
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
-    max-width: 85%;
     padding: 3em;
     color: $color-light;
-    
+    max-width: 611px;
+    max-height: 350px;
+
 
 
     &:nth-child(odd) {
@@ -26,7 +27,7 @@
                 left: -30px;
             }
     }
-    
+
 
 
 

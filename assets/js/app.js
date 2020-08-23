@@ -8,10 +8,10 @@ function setupTabs() {
       const selectedTab = document.querySelector(`.tabs__content[data-team="${tab}"]`);
       const rootStyle = document.documentElement.style;
 
-        
-      $('.slider').slick('unslick').slick('init');
 
-    
+      // $('.slider').slick('unslick').slick('init');
+
+
     if( tab === 'blue' ) {
       rootStyle.setProperty(`--color-teams`, '#01adf9');
     } else if( tab === 'between' ) {
@@ -39,27 +39,27 @@ function setupTabs() {
 
 // Slider
 $(document).ready(function() {
-  
-  $('.slider').slick({
-    accessibility: true,
-    arrows: false,
-    mobileFirst: true,
-    waitForAnimate: false,
-    easing: 'ease-in-out'
-  });
 
-  $('.slider2').slick({
-    accessibility: true,
-    arrows: false,
-    mobileFirst: true,
-    slidesToShow: 3.2,
-    autoplay: true,
-    autoplaySpeed: 2000
-  });
+  // $('.slider').slick({
+  //   accessibility: true,
+  //   arrows: false,
+  //   mobileFirst: true,
+  //   waitForAnimate: false,
+  //   easing: 'ease-in-out'
+  // });
+
+  // $('.slider2').slick({
+  //   accessibility: true,
+  //   arrows: false,
+  //   mobileFirst: true,
+  //   slidesToShow: 3.2,
+  //   autoplay: true,
+  //   autoplaySpeed: 2000
+  // });
 
   $('.slider-experts').slick({
     accessibility: true,
-    arrows: false,
+    arrows: true,
     mobileFirst: true,
     slidesToShow: 1,
     autoplay: true,
@@ -71,12 +71,12 @@ $(document).ready(function() {
         slidesToShow: 5,
       }
     }
-  
+
   ]
 
   });
   setupTabs();
-  
+
 });
 
 

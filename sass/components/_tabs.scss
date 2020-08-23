@@ -1,6 +1,6 @@
 .tabs {
     &__wrapper {
-        background-image: 
+        background-image:
         linear-gradient(to bottom, $color-light, transparent),
         url(../../assets/img/mobile/choice/choice_blue.png);
         background-size: cover;
@@ -56,7 +56,7 @@
             }
         }
 
-    
+
     }
     &__content {
         padding: 4em 2.5em;
@@ -71,7 +71,7 @@
 
         &--top {
             text-align: center;
-          
+
         }
         &--bottom {
             text-align: left;
@@ -87,7 +87,10 @@
         &__slide {
             @include divider(var(--color-teams), before);
         }
+        &__slidevert {
+            @include divider(var(--color-teams), before, false, true);
+        }
     }
-    
+
 }
 

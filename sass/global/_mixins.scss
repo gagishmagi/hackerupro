@@ -1,4 +1,4 @@
-@mixin divider($clr: $color-blue, $pos: after, $is_between : false) {
+@mixin divider($clr: $color-blue, $pos: after, $is_between : false ,$vertical : false) {
     &::#{$pos} {
         content: "";
         background-color: $clr;
@@ -12,20 +12,43 @@
         } @if $is_between == true {
             margin: .5em 0;
         }
+        @if $vertical == true {
+            height: 0.2em;
+            width: 2.5em;
+            @include rotate(-90deg);
+        }
     }
 }
 
 
+@mixin rotate($degrees) {
+    -webkit-transform: rotate($degrees);
+    -moz-transform: rotate($degrees);
+    -ms-transform: rotate($degrees);
+    -o-transform: rotate($degrees);
+    transform: rotate($degrees);
+}
+
 
 @mixin respond($breakpoint) {
-    @if $breakpoint == lg {
-        @media only screen and (min-width: 1536px) { @content };  
-    }
-    @if $breakpoint == md {
-        @media only screen and (min-width: 992px) { @content };  
-    }
-    @if $breakpoint == sm {
-        @media only screen and (min-width: 576px) { @content }; 
-    }
+  @if $breakpoint == xs {
+    @media (max-width: 767px) { @content; }
+  }
+
+  @else if $breakpoint == sm {
+    @media (min-width: 768px ) and (max-width: 992px) { @content; }
+  }
+
+  @else if $breakpoint == md {
+    @media (min-width: 992px ) and ( max-width: 1200px ) { @content; }
+  }
+
+  @else if $breakpoint == lg {
+    @media (min-width: 1200px) { @content; }
+  }
+
+  @else {
+    @warn "Breakpoint mixin supports: xs, sm, md, lg";
+  }
 }
 

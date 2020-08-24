@@ -2,7 +2,7 @@
     font-size: 1.2rem;
     background: none;
     font-family: inherit;
-    padding: .5em 1.8em; 
+    padding: .5em 1.8em;
     color: currentColor;
     border-radius: 50px;
     border: 1px solid;
@@ -10,15 +10,27 @@
     cursor: pointer;
     -webkit-appearance: none;
     appearance: none;
-    
+
 
     &--full {
         background-color: $color-cyan;
         color: $color-dark;
         border-color: transparent;
     }
-    
+
+    &--full:hover{
+        background-color: transparent;
+        border-color: $color-light;
+        color: $color-light;
+    }
+
     &--ghost {
         border-color: $color-light;
+    }
+
+    &--ghost:hover{
+        background-color: $color-cyan;
+        color: $color-dark;
+        border-color: transparent;
     }
 }

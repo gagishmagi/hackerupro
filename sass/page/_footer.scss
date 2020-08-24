@@ -1,10 +1,10 @@
 footer {
 
-    background: transparent linear-gradient(254deg, var(--unnamed-color-00ffff) 0%, var(--unnamed-color-1565c0) 37%, var(--unnamed-color-41147e) 100%) 0% 0% no-repeat padding-box;
-    background: transparent linear-gradient(254deg, #00FFFF 0%, #1565C0 37%, #41147E 100%) 0% 0% no-repeat padding-box;
-    mix-blend-mode: multiply;
-    opacity: 1;
-    background-image: url('/assets/img/footer/footer.png') cover;
+    background-image: url(../../assets/img/Home/Desktop/footer.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
 
     color: $color-light;
 

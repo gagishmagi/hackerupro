@@ -26,6 +26,11 @@
             }
     }
 
+    &:nth-child(even) {
+        .card__icon {
+            top: 55%;
+        }
+    }
 
 
 

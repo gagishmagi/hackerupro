@@ -3,8 +3,9 @@
     background-image: url("/assets/img/Home/Desktop/Cywar\ img.png");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     height: 100%;
-    text-align: center;
+    text-align: left;
 
     &__img {
         width: 100%;

@@ -16,6 +16,112 @@
             margin: 0 auto;
         }
     }
+
+    .wrapper-dropdown-3 {
+        /* Size and position */
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+
+        /* Styles */
+        width: 100%;
+        border-radius: 20px;
+        outline: none;
+        border: 1px solid gray;
+        padding: 5px 10px;
+        margin: 5px;
+        text-align: left;
+    }
+    .wrapper-dropdown-3:after {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        margin-top: -3px;
+        border-width: 6px 6px 0 6px;
+        border-style: solid;
+        border-color: $color-blue transparent;
+    }
+    .wrapper-dropdown-3 .dropdown {
+        /* Size & position */
+        position: absolute;
+        top: 140%;
+        left: 0;
+        right: 0;
+
+        /* Styles */
+        background: white;
+        border-radius: inherit;
+        border: 1px solid rgba(0, 0, 0, 0.17);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        font-weight: normal;
+        transition: all 0.5s ease-in;
+        list-style: none;
+
+        /* Hiding */
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .wrapper-dropdown-3 .dropdown li a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #8aa8bd;
+        border-bottom: 1px solid #e6e8ea;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 1);
+        transition: all 0.3s ease-out;
+    }
+
+    .wrapper-dropdown-3 .dropdown li i {
+        float: right;
+        color: inherit;
+    }
+
+    .wrapper-dropdown-3 .dropdown li:first-of-type a {
+        border-radius: 7px 7px 0 0;
+    }
+
+    .wrapper-dropdown-3 .dropdown li:last-of-type a {
+        border-radius: 0 0 7px 7px;
+        border: none;
+    }
+
+    /* Hover state */
+
+    .wrapper-dropdown-3 .dropdown li:hover a {
+        background: #f3f8f8;
+    }
+    .wrapper-dropdown-3 .dropdown:after {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        bottom: 100%;
+        right: 15px;
+        border-width: 0 6px 6px 6px;
+        border-style: solid;
+        border-color: #fff transparent;
+    }
+
+    .wrapper-dropdown-3 .dropdown:before {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        bottom: 100%;
+        right: 13px;
+        border-width: 0 8px 8px 8px;
+        border-style: solid;
+        border-color: rgba(0, 0, 0, 0.1) transparent;
+    }
+
+    .wrapper-dropdown-3.active .dropdown {
+        opacity: 1;
+        pointer-events: auto;
+    }
 }
 
 .form {
@@ -44,26 +150,30 @@
     }
 
     &__checkbox input[type=checkbox]~label:hover::before {
-        background: #ddd;
+        background: #00FFFF 0% 0% no-repeat padding-box;
+
     }
 
     &__checkbox input:checked~label:before {
-        content: "";
+        content: "\2713";
+        background: transparent;
+        border: 1px solid gray;
     }
-    &__checkbox input:active {
-        background-color: red;
-    }
+    // &__checkbox input:active {
+    //     background-color: red;
+    // }
 
     &__checkbox label:before {
         display: inline-block;
-        content: "\00a0";
+        content: "";
         /* Blank space */
         width: 20px;
+        height: 20px;
         // margin-right: 5px;
         // text-align: center;
         // background: #f2f2f2;
-        background: #00FFFF 0% 0% no-repeat padding-box;
-        border: 1px solid #26323800;
+        background: transparent;
+        border: 1px solid gray;
         border-radius: 15px;
         opacity: 0.6;
     }
@@ -79,8 +189,29 @@
         border-radius: 20px;
         padding: 7px;
     }
+    &__btn:hover {
+        color:$color-blue;
+        border: 1px solid $color-blue;
+        background-color: transparent;
+    }
 
     & .icon .fa {
         color: $color-blue;
+        padding: 1em;
+        font-size: 1.5em;
+    }
+
+    & .icon .fa:hover {
+        color: $color-dark;
+        @include animation('bounce-up 0.5s 3');
+        @include keyframes(bounce-up) {
+            0% {
+                transform: scale(1) translateY(0);
+            }
+
+            100% {
+                transform: translateY(-0.2em);
+            }
+        }
     }
 }

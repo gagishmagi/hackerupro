@@ -2,5 +2,9 @@
     &__content {
         padding: 3em;
         text-align: center;
+        & .heading {
+            display: inline-flex;
+        }
     }
+
 }

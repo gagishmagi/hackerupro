@@ -25,10 +25,8 @@
         display: none;
         background: none;
         border: none;
-
-        @include respond(md) {
-            display: flex;
-        }
+        flex-direction: column;
+        justify-content: space-between;
 
         svg {
             width: 2.5rem;
@@ -40,10 +38,6 @@
         margin: 0;
         padding: 0;
         display: flex;
-
-        @include respond(md) {
-
-        }
     }
     &__item {
 
@@ -55,7 +49,16 @@
         display: block;
         &:hover{
             color: $color-cyan;
+        }
+        &--active{
+            color: $color-cyan;
             font-weight: bold;
+        }
+    }
+
+    @include respond(md) {
+        &__menu {
+            display: flex;
         }
     }
 

@@ -31,6 +31,7 @@
         padding: 5px 10px;
         margin: 5px;
         text-align: left;
+        font-size: 0.8em;
     }
     .wrapper-dropdown-3:after {
         content: "";
@@ -54,8 +55,8 @@
         /* Styles */
         background: white;
         border-radius: inherit;
-        border: 1px solid rgba(0, 0, 0, 0.17);
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        border: 1px solid $color-dark;
+        box-shadow: 0 0 5px $color-dark;
         font-weight: normal;
         transition: all 0.5s ease-in;
         list-style: none;
@@ -63,6 +64,8 @@
         /* Hiding */
         opacity: 0;
         pointer-events: none;
+
+        color: $color-dark;
     }
 
     .wrapper-dropdown-3 .dropdown li a {
@@ -158,6 +161,7 @@
         content: "\2713";
         background: transparent;
         border: 1px solid gray;
+        z-index: 0;
     }
     // &__checkbox input:active {
     //     background-color: red;

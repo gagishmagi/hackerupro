@@ -1,47 +1,40 @@
 .nav {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     font-family: 'Roboto';
 
-    padding: 1em 2em;
-
     &__logo {
+        width:20px;
         img {
-            max-width: 9rem;
-            width: 100%;
+            width: 10px;
         }
     }
-    &__btn {
-        position: absolute;
-        top: 0.75rem;
-        right: 1rem;
-        display: none;
-        background: none;
-        border: none;
-        flex-direction: column;
-        justify-content: space-between;
+    // &__btn {
+    //     position: absolute;
+    //     top: 0.75rem;
+    //     right: 1rem;
+    //     display: none;
+    //     background: none;
+    //     border: none;
+    //     flex-direction: column;
+    //     justify-content: space-between;
 
-        svg {
-            width: 2.5rem;
-            height: 2.5rem;
-        }
-    }
-    &__menu {
-        // display: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-    }
-    &__item {
+    //     svg {
+    //         width: 2.5rem;
+    //         height: 2.5rem;
+    //     }
+    // }
+    // &__menu {
+    //     // display: none;
+    //     margin: 0;
+    //     padding: 0;
+    //     display: flex;
+    // }
+    // &__item {
 
-    }
+    // }
     &__link {
         text-decoration: none;
         color: white;

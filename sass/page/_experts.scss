@@ -1,9 +1,25 @@
 .experts {
+
+    .slick-center {
+        -webkit-transform: scale(1.25);
+        -moz-transform: scale(1.25);
+        transform: scale(1.25);
+        position: relative;
+        top: 50px;
+    }
+
+    .slick-track{
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+
     .slick-next{
+        top: 60%;
         right: -70px;
     }
     
     .slick-prev{
+        top: 60%;
         left: -70px;
     }
     .container-fluid{
@@ -25,6 +41,9 @@
     .mobile-experts{
         .slick-current {
             box-shadow: inset 1px 1px 5px rgba($color-dark-light, .4);
+        }
+        .expert-card{
+            padding: 2em;
         }
     }
 
@@ -126,10 +145,12 @@
 @media screen and (max-width: 850px) {
     .experts{
         .slick-next{
+            top: 45%;
             right: -25px;
         }
         
         .slick-prev{
+            top: 45%;
             left: -25px;
         }
         .mobile-experts{

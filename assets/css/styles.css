@@ -698,10 +698,23 @@ ul {
 .experts {
   text-align: center;
 }
+.experts .slick-center {
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  transform: scale(1.25);
+  position: relative;
+  top: 50px;
+}
+.experts .slick-track {
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
 .experts .slick-next {
+  top: 60%;
   right: -70px;
 }
 .experts .slick-prev {
+  top: 60%;
   left: -70px;
 }
 .experts .container-fluid {
@@ -718,7 +731,9 @@ ul {
 }
 .experts .mobile-experts .slick-current {
   box-shadow: inset 1px 1px 5px rgba(96, 96, 96, 0.4);
-  box-shadow: 1px 1px 5px rgba(96, 96, 96, 0.4);
+}
+.experts .mobile-experts .expert-card {
+  padding: 2em;
 }
 .experts .expert-card {
   transition: all 0.5s;
@@ -799,9 +814,11 @@ ul {
 
 @media screen and (max-width: 850px) {
   .experts .slick-next {
+    top: 45%;
     right: -25px;
   }
   .experts .slick-prev {
+    top: 45%;
     left: -25px;
   }
   .experts .mobile-experts {

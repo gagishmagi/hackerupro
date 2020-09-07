@@ -80,6 +80,9 @@ $(document).ready(function() {
     centerMode: true,
     centerPadding: "15%",
     slidesToShow: 3,
+    // infinite: true,
+    // variableWidth: true,
+    // variableHeight: true
     // responsive: [
     //   {
     //     breakpoint: 768,

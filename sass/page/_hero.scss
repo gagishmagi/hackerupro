@@ -3,8 +3,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
-    height: 70vh;
+    padding-bottom: 5vh;
     justify-content: center;
     align-items: center;
 
@@ -42,5 +41,14 @@
         // }
 
 
+    }
+}
+@media screen and (max-width: 850px) {
+    .hero {
+        &__content {
+            h1{
+                font-size: 1.2em;
+            }
+        }
     }
 }

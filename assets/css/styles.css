@@ -88,7 +88,7 @@ ul {
 .lead {
   line-height: 1.4;
   letter-spacing: 0.09px;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
 }
 .lead--lg {
   font-size: 1.3em;
@@ -294,7 +294,7 @@ ul {
 
 @media screen and (max-width: 850px) {
   .nav__menu {
-    visibility: hidden;
+    display: none;
     clear: both;
   }
 
@@ -304,6 +304,17 @@ ul {
 
   .nav__logo img {
     width: 200px;
+  }
+
+  .prepared-svg {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 850px) {
+  .prepared-svg {
+    position: relative;
+    top: 20px;
+    margin-bottom: 10px;
   }
 }
 .btn {
@@ -356,7 +367,7 @@ ul {
   border: none;
   outline: none;
   padding: 0.5em 1em;
-  font-size: 1.2rem;
+  font-size: 16px;
   text-transform: uppercase;
   font-weight: 300;
   color: rgba(21, 101, 193, 0.6);
@@ -434,6 +445,11 @@ ul {
   transform: rotate(-90deg);
 }
 
+@media screen and (min-width: 850px) {
+  .tabs__btn {
+    padding: 0.5em 4em;
+  }
+}
 .list__item {
   padding: 0.8em 0;
   display: flex;
@@ -599,7 +615,7 @@ ul {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 70vh;
+  padding-bottom: 5vh;
   justify-content: center;
   align-items: center;
 }
@@ -616,6 +632,11 @@ ul {
   width: 100%;
 }
 
+@media screen and (max-width: 850px) {
+  .hero__content h1 {
+    font-size: 1.2em;
+  }
+}
 .choice__content {
   padding: 3em;
   text-align: center;
@@ -624,6 +645,11 @@ ul {
   display: inline-flex;
 }
 
+@media screen and (max-width: 850px) {
+  .choice__content .heading {
+    display: block;
+  }
+}
 .cywar {
   padding: 3em 2em;
   background-image: url("../../assets/img/Home/Desktop/CywarImg.png");
@@ -637,8 +663,16 @@ ul {
   width: 100%;
   height: auto;
   margin: 2rem 0;
+  -webkit-transform: rotate(-18deg);
+  -moz-transform: rotate(-18deg);
+  -ms-transform: rotate(-18deg);
+  -o-transform: rotate(-18deg);
+  transform: rotate(-18deg);
 }
 
+.services {
+  overflow: hidden;
+}
 .services__top {
   padding: 4em 3em 1.5em;
   text-align: left;
@@ -664,6 +698,12 @@ ul {
 .experts {
   text-align: center;
 }
+.experts .slick-next {
+  right: -70px;
+}
+.experts .slick-prev {
+  left: -70px;
+}
 .experts .container-fluid {
   width: 80%;
   padding: 0 5vw;
@@ -674,13 +714,17 @@ ul {
 .experts .full-img {
   width: 100%;
   position: relative;
-  top: 100px;
+  top: 80px;
+}
+.experts .mobile-experts .slick-current {
+  box-shadow: inset 1px 1px 5px rgba(96, 96, 96, 0.4);
+  box-shadow: 1px 1px 5px rgba(96, 96, 96, 0.4);
 }
 .experts .expert-card {
   transition: all 0.5s;
-  margin-top: 50px;
+  margin-top: 90px;
+  margin-bottom: 90px;
   background-color: #fff;
-  box-shadow: 1px 1px 5px rgba(96, 96, 96, 0.4);
   padding: 0;
   position: relative;
   transition: all 0.3s ease-out;
@@ -688,6 +732,7 @@ ul {
   cursor: pointer;
 }
 .experts .expert-card .all-card {
+  box-shadow: 1px 1px 5px rgba(96, 96, 96, 0.4);
   padding: 2em;
 }
 .experts .expert-card .expert-name {
@@ -748,6 +793,24 @@ ul {
   }
 }
 
+.mobile-experts {
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+  .experts .slick-next {
+    right: -25px;
+  }
+  .experts .slick-prev {
+    left: -25px;
+  }
+  .experts .mobile-experts {
+    display: block;
+  }
+  .experts .pc-experts {
+    display: none;
+  }
+}
 .contact {
   text-align: center;
   /* Hover state */
@@ -972,6 +1035,11 @@ ul {
   }
 }
 
+@media screen and (max-width: 850px) {
+  .contact__img {
+    display: none;
+  }
+}
 footer {
   background-image: url(../../assets/img/Home/Desktop/footer.png);
   background-size: cover;

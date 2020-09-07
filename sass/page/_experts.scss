@@ -1,44 +1,45 @@
 .experts {
-    // .slick-arrow{
-    //     margin: 20px;
-    // }
+    .slick-next{
+        right: -70px;
+    }
     
+    .slick-prev{
+        left: -70px;
+    }
     .container-fluid{
-        // overflow: hidden;
         width: 80%;
         padding: 0 5vw;
     }
-    // padding: 2em;
     text-align: center;
     .slider-experts {
-        // width: 100%;
         .slick-list {
             padding: 5em 0;
-            // overflow-y: visible;
         }
     }
 
-    // .expert-blue-img{
-        .full-img{
-            width: 100%;
-            position: relative;
-            top: 100px;
+    .full-img{
+        width: 100%;
+        position: relative;
+        top: 80px;
+    }
+    .mobile-experts{
+        .slick-current {
+            box-shadow: inset 1px 1px 5px rgba($color-dark-light, .4);
         }
-    // }
-    
+    }
 
     .expert-card {
         transition: all .5s;
-        // width: auto !important;
-        margin-top: 50px ;
+        margin-top: 90px ;
+        margin-bottom: 90px ;
         background-color: $color-light;
-        box-shadow: 1px 1px 5px rgba($color-dark-light, .4);
         padding: 0;
         position: relative;
         transition: all .3s ease-out;
         outline: 0;
         cursor: pointer;
         .all-card{
+            box-shadow: 1px 1px 5px rgba($color-dark-light, .4);
             padding: 2em;
         }
         .expert-name {
@@ -118,4 +119,24 @@
 
     // }
 
+}
+.mobile-experts{
+    display: none;
+}
+@media screen and (max-width: 850px) {
+    .experts{
+        .slick-next{
+            right: -25px;
+        }
+        
+        .slick-prev{
+            left: -25px;
+        }
+        .mobile-experts{
+            display: block;
+        }
+        .pc-experts{
+            display: none;
+        }
+    }
 }

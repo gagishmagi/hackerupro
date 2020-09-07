@@ -219,3 +219,11 @@
         }
     }
 }
+
+@media screen and (max-width: 850px) {
+    .contact {
+        &__img {
+            display: none;
+        }
+    }
+}

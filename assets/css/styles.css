@@ -338,25 +338,6 @@ ul {
   border-color: transparent;
 }
 
-[dir=rtl] .slick-prev:before {
-  content: "→";
-}
-
-.slick-prev:before {
-  content: "←";
-}
-
-.slick-prev:before,
-.slick-next:before {
-  font-family: "slick";
-  font-size: 20px;
-  line-height: 1;
-  opacity: 0.75;
-  color: white;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 .tabs__wrapper {
   background-image: linear-gradient(to bottom, #fff, transparent), url("../../assets/img/Home/Desktop/services blue img.png");
   background-size: cover;
@@ -497,10 +478,10 @@ ul {
   top: 55%;
 }
 .card--1 {
-  background-image: url("/assets/img/Home/Desktop/additional1 img.png");
+  background-image: url("../../assets/img/Home/Desktop/additional1 img.png");
 }
 .card--2 {
-  background-image: url("/assets/img/Home/Desktop/additional2 img.png");
+  background-image: url("../../assets/img/Home/Desktop/additional2 img.png");
 }
 .card__icon {
   background-color: #fff;
@@ -645,7 +626,7 @@ ul {
 
 .cywar {
   padding: 3em 2em;
-  background-image: url("/assets/img/Home/Desktop/CywarImg.png");
+  background-image: url("../../assets/img/Home/Desktop/CywarImg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -681,24 +662,33 @@ ul {
 }
 
 .experts {
-  padding: 2em;
   text-align: center;
 }
-.experts .slider-experts {
-  width: 100%;
+.experts .container-fluid {
+  width: 80%;
+  padding: 0 5vw;
 }
 .experts .slider-experts .slick-list {
   padding: 5em 0;
-  overflow-y: visible;
+}
+.experts .full-img {
+  width: 100%;
+  position: relative;
+  top: 100px;
 }
 .experts .expert-card {
+  transition: all 0.5s;
+  margin-top: 50px;
   background-color: #fff;
   box-shadow: 1px 1px 5px rgba(96, 96, 96, 0.4);
-  padding: 2em;
+  padding: 0;
   position: relative;
   transition: all 0.3s ease-out;
   outline: 0;
   cursor: pointer;
+}
+.experts .expert-card .all-card {
+  padding: 2em;
 }
 .experts .expert-card .expert-name {
   color: #00ffff;
@@ -734,15 +724,6 @@ ul {
     display: none;
   }
 }
-@media (min-width: 992px) and (max-width: 1200px) {
-  .experts .expert-card {
-    background: url(../../assets/img/experts/desktop-slider/Amir.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: 0;
-  }
-}
 .experts .expert-card__img {
   max-width: 7.5rem;
   width: 100%;
@@ -751,6 +732,7 @@ ul {
   margin-top: -5em;
   top: 0;
   left: 50%;
+  z-index: 100;
 }
 @media (min-width: 992px) and (max-width: 1200px) {
   .experts .expert-card__img {
@@ -765,6 +747,7 @@ ul {
     opacity: 0;
   }
 }
+
 .contact {
   text-align: center;
   /* Hover state */

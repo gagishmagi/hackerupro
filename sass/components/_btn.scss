@@ -35,21 +35,21 @@
     }
 }
 
-[dir='rtl'] .slick-prev:before {
-    content: '→';
-}
+// [dir='rtl'] .slick-prev:before {
+//     content: '→';
+// }
 
-.slick-prev:before {
-    content: '←';
-}
+// .slick-prev:before {
+//     content: '←';
+// }
 
-.slick-prev:before,
-.slick-next:before {
-    font-family: 'slick';
-    font-size: 20px;
-    line-height: 1;
-    opacity: .75;
-    color: white;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
+// .slick-prev:before,
+// .slick-next:before {
+//     font-family: 'slick';
+//     font-size: 20px;
+//     line-height: 1;
+//     opacity: .75;
+//     color: white;
+//     -webkit-font-smoothing: antialiased;
+//     -moz-osx-font-smoothing: grayscale;
+// }

@@ -148,6 +148,10 @@
     }
 
 
+    &__checkbox {
+        position: relative;
+    }
+
     &__checkbox input[type=checkbox] {
         display: none;
     }
@@ -163,8 +167,9 @@
         border: 1px solid gray;
         z-index: 0;
     }
-    // &__checkbox input:active {
-    //     background-color: red;
+    
+    // &__checkbox label {
+    //     text-align: left;
     // }
 
     &__checkbox label:before {
@@ -173,7 +178,9 @@
         /* Blank space */
         width: 20px;
         height: 20px;
-        // margin-right: 5px;
+        margin: 0 5px;
+        position: relative;
+        top: 10px;
         // text-align: center;
         // background: #f2f2f2;
         background: transparent;

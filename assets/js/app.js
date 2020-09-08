@@ -60,6 +60,7 @@ $(document).ready(function() {
   $(document).on('click','.choice .tabs__btn',function(){
     checkWidth();
   })
+
   // $('.slider2').slick({
   //   accessibility: true,
   //   arrows: false,
@@ -68,6 +69,7 @@ $(document).ready(function() {
   //   autoplay: true,
   //   autoplaySpeed: 2000
   // });
+
   $('.slider-mobile-experts').slick({
     prevArrow:"<img class='a-left control-c prev slick-prev' src='./assets/img/Home/left.png'>",
     nextArrow:"<img class='a-right control-c next slick-next' src='./assets/img/Home/right.png'>",
@@ -80,77 +82,11 @@ $(document).ready(function() {
     centerMode: true,
     centerPadding: "15%",
     slidesToShow: 3,
-    // infinite: true,
-    // variableWidth: true,
-    // variableHeight: true
-    // responsive: [
-    //   {
-    //     breakpoint: 768,
-    //     settings: {
-    //       arrows: false,
-    //       centerMode: true,
-    //       centerPadding: '40px',
-    //       slidesToShow: 5
-    //     }
-    //   },
-    //   {
-    //     breakpoint: 480,
-    //     settings: {
-    //       arrows: false,
-    //       centerMode: true,
-    //       centerPadding: '40px',
-    //       slidesToShow: 1
-    //     }
-    //   }
-    // ]
-    
-
-    // centerMode: true,
-    // centerPadding: '60px',
-    // slidesToShow: 3,
-    // responsive: [
-    //   {
-    //     breakpoint: 768,
-    //     settings: {
-    //       arrows: false,
-    //       centerMode: true,
-    //       centerPadding: '40px',
-    //       slidesToShow: 3
-    //     }
-    //   },
-    //   {
-    //     breakpoint: 480,
-    //     settings: {
-    //       arrows: false,
-    //       centerMode: true,
-    //       centerPadding: '40px',
-    //       slidesToShow: 1
-    //     }
-    //   }
-    // ]
-
-
-
-  //   accessibility: true,
-  //   arrows: true,
-  //   mobileFirst: true,
-  //   slidesToShow: 1,
-  //   autoplay: true,
-  //   autoplaySpeed: 2000,
-  //   responsive: [
-  //   {
-  //     breakpoint: 992,
-  //     settings: {
-  //       slidesToShow: 5,
-  //     }
-  //   }
-
-  // ]
-
   });
+  // Init fuctions
   setupTabs();
-
   setSlickStyle();
+
 });
 
 function setSlickStyle(){
@@ -174,7 +110,10 @@ $(document).on('click','.expert-card', function(){
 $(document).on('click','.slick-arrow', function(){
     setSlickStyle();
 })
-
+$(document).on('click','.expert-card', function(){
+  console.log('click')
+    setSlickStyle();
+})
 
 // expertsSlides.forEach(expertSlide => {
 //   expertSlide.addEventListener('click', () => {

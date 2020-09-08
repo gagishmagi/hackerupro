@@ -14,16 +14,18 @@
     }
 
     .slick-next{
-        top: 60%;
+        top: 30%;
         right: -70px;
     }
     
     .slick-prev{
-        top: 60%;
+        top: 30%;
         left: -70px;
     }
+
     .container-fluid{
-        width: 80%;
+        width:80%;
+        // max-width: 965px;
         padding: 0 5vw;
     }
     text-align: center;
@@ -43,7 +45,21 @@
             box-shadow: inset 1px 1px 5px rgba($color-dark-light, .4);
         }
         .expert-card{
-            padding: 2em;
+            padding: 0 30px 30px 30px;
+            &__img {
+                position: relative;
+                width: 100px;
+                height: auto;
+                margin: 0 auto;
+                top: -50px;
+                z-index: 100;
+        
+            }
+
+            &__content {
+                position: relative;
+                top: -30px;
+            }
         }
     }
 
@@ -51,82 +67,36 @@
         transition: all .5s;
         margin-top: 90px ;
         margin-bottom: 90px ;
-        background-color: $color-light;
-        padding: 0;
+        // background-color: $color-light;
         position: relative;
         transition: all .3s ease-out;
         outline: 0;
+        padding-bottom: 20vw;
         cursor: pointer;
+        
         .all-card{
-            box-shadow: 1px 1px 5px rgba($color-dark-light, .4);
-            padding: 2em;
-        }
-        .expert-name {
-            color: $color-cyan;
-            font-weight: 700;
-            font-size: 1.3em;
-            font-family: inherit;
-            text-transform: uppercase;
+            background: #fff;
             position: absolute;
-
-            bottom: 3em;
-            left: 50%;
-            transform: translate(-50%);
-            display: none;
-            @include respond(md) {
-                display: block;
-            }
+            box-shadow: 1px 1px 5px rgba($color-dark-light, .4);
+            padding: 0 2vw;
+            width: 130%;
+            left: -15%;
+            height: auto;
         }
-
-      
-    @include respond(md) {
-        &--active {
-            background: white !important;
-            transform: scale(1.2);
-            z-index: 100;
-            padding: 4em 0;
-            .expert-card__img {
-                opacity: 1;
-            }
-            .expert-card__content  {
-                opacity: 1;
-            }
-
-            .expert-name {
-                display: none;
-            }
-
-        }
-    }
-
-        // @include respond(md) {
-        //     background: url(../../assets/img/experts/desktop-slider/Amir.png);
-        //     background-size: cover;
-        //     background-position: center;
-        //     background-repeat: no-repeat;
-        //     margin: 0;
-        // }
-
 
         &__img {
-            max-width: 7.5rem;
-            width: 100%;
+            position: relative;
+            width: 7vw;
             height: auto;
             margin: 0 auto;
-            margin-top: -5em;
-            top: 0;
-            left: 50%;
+            top: -3.5vw;
             z-index: 100;
-            @include respond(md) {
-                opacity: 0;
-            }
+    
         }
 
         &__content {
-            padding-top: 3em;
-            @include respond(md) {
-                opacity: 0;
-            }
+            position: relative;
+            top: -2vw;
         }
     }
 
@@ -142,7 +112,7 @@
 .mobile-experts{
     display: none;
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1390px) {
     .experts{
         .slick-next{
             top: 45%;
@@ -158,6 +128,17 @@
         }
         .pc-experts{
             display: none;
+        }
+    }
+}
+@media screen and (min-width: 1500px) {
+    .experts{
+        .expert-card{
+            .all-card{
+                padding: 0 2vw;
+                width: 80%;
+                left: 10%;
+            }
         }
     }
 }

@@ -37,6 +37,7 @@ function setupTabs() {
 }
 
 function checkWidth() {
+  console.log($(window).width());
   if ($(window).width() < 850) {
     if(!$('.slider').hasClass('slick-slider')){
       $('.slider').slick({
@@ -46,6 +47,10 @@ function checkWidth() {
         waitForAnimate: false,
         easing: 'ease-in-out'
       });
+    }
+  } else {
+    if($('.slider').hasClass('slick-slider')){
+      $('.slider').slick('unslick');
     }
   }
 }
@@ -94,7 +99,6 @@ $(document).ready(function() {
 });
 
 function setSlickStyle(){
-  console.log($('.slick-center').length)
   if($('.slick-center').length){
     $('.full-img').removeClass('d-none')
     $('.all-card').addClass('d-none')

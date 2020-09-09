@@ -83,6 +83,10 @@ $(document).ready(function() {
     centerPadding: "15%",
     slidesToShow: 3,
   });
+
+  $('.slider-our-experts').on("afterChange", function (){
+    setSlickStyle();
+  });
   // Init fuctions
   setupTabs();
   setSlickStyle();
@@ -90,6 +94,7 @@ $(document).ready(function() {
 });
 
 function setSlickStyle(){
+  console.log($('.slick-center').length)
   if($('.slick-center').length){
     $('.full-img').removeClass('d-none')
     $('.all-card').addClass('d-none')

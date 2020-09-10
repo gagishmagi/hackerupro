@@ -297,13 +297,14 @@ ul {
     display: none;
     clear: both;
   }
+  .nav__logo img {
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
 
   #menuToggle {
     display: block;
-  }
-
-  .nav__logo img {
-    width: 200px;
   }
 
   .prepared-svg {
@@ -633,6 +634,10 @@ ul {
 }
 
 @media screen and (max-width: 850px) {
+  .hero__content {
+    margin-top: 9vh;
+    font-size: 30px;
+  }
   .hero__content h1 {
     font-size: 1.2em;
   }

@@ -168,17 +168,21 @@ display: none;
 
 
 @media screen and (max-width: 850px) {
-    .nav__menu {
+  .nav {
+    &__menu {
       display: none;
       clear: both;
     }
-    #menuToggle {
-        display: block;
-    }
-    .nav__logo {
+    &__logo {
         img {
             width: 200px;
+            margin-top: 20px;
+            margin-left: 20px;
         }
+    }
+  }
+    #menuToggle {
+        display: block;
     }
     .prepared-svg{
       width: 100%;

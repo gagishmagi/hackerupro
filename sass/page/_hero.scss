@@ -46,6 +46,8 @@
 @media screen and (max-width: 850px) {
     .hero {
         &__content {
+            margin-top: 9vh;
+            font-size: 30px;
             h1{
                 font-size: 1.2em;
             }

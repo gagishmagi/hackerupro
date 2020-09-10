@@ -37,8 +37,10 @@ function setupTabs() {
 }
 
 function checkWidth() {
-  console.log($(window).width());
   if ($(window).width() < 850) {
+    if($('.br-hide').hasClass('d-none')){
+      $('.br-hide').removeClass('d-none');
+    }
     if(!$('.slider').hasClass('slick-slider')){
       $('.slider').slick({
         accessibility: true,
@@ -49,6 +51,9 @@ function checkWidth() {
       });
     }
   } else {
+    if(!$('.br-hide').hasClass('d-none')){
+      $('.br-hide').addClass('d-none');
+    }
     if($('.slider').hasClass('slick-slider')){
       $('.slider').slick('unslick');
     }
@@ -63,6 +68,10 @@ $(document).ready(function() {
   checkWidth();
   $(window).resize(checkWidth);
   $(document).on('click','.choice .tabs__btn',function(){
+    checkWidth();
+  })
+  $(document).on('click','.tabs__btn',function(){
+    $('.slider').slick('unslick');
     checkWidth();
   })
 

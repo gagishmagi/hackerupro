@@ -9,30 +9,10 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    text-align: center;
+    text-align: left;
     padding: 3em;
     color: $color-light;
-    max-width: 611px;
-    max-height: 350px;
-
-
-
-    &:nth-child(odd) {
-            margin-left: auto;
-            margin-bottom: 2em;
-            .card__icon {
-                right: initial;
-                left: -30px;
-            }
-    }
-
-    &:nth-child(even) {
-        .card__icon {
-            top: 55%;
-        }
-    }
-
-
+ 
 
     &--1 {
         background-image: url("../../assets/img/Home/Desktop/additional1\ img.png");
@@ -46,12 +26,18 @@
         background-color: $color-light;
         border-radius: 50%;
         box-shadow: 1px 1px 10px rgba($color-dark-light, .4);
-        padding: .8em;
+        padding: 1.2em;
         position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         right: -30px;
         svg {width: 2rem; height: 2rem;}
+    }
+    
+    &__icon-left {
+        top: 10%;
+        right: initial;
+        left: -30px;
+    }
+    &__icon-right {
+        bottom: 10%;
     }
 }

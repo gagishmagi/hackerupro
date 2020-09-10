@@ -477,22 +477,9 @@ ul {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  text-align: center;
+  text-align: left;
   padding: 3em;
   color: #fff;
-  max-width: 611px;
-  max-height: 350px;
-}
-.card:nth-child(odd) {
-  margin-left: auto;
-  margin-bottom: 2em;
-}
-.card:nth-child(odd) .card__icon {
-  right: initial;
-  left: -30px;
-}
-.card:nth-child(even) .card__icon {
-  top: 55%;
 }
 .card--1 {
   background-image: url("../../assets/img/Home/Desktop/additional1 img.png");
@@ -504,16 +491,21 @@ ul {
   background-color: #fff;
   border-radius: 50%;
   box-shadow: 1px 1px 10px rgba(96, 96, 96, 0.4);
-  padding: 0.8em;
+  padding: 1.2em;
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   right: -30px;
 }
 .card__icon svg {
   width: 2rem;
   height: 2rem;
+}
+.card__icon-left {
+  top: 10%;
+  right: initial;
+  left: -30px;
+}
+.card__icon-right {
+  bottom: 10%;
 }
 
 .slider2 {
@@ -656,18 +648,26 @@ ul {
   }
 }
 .cywar {
-  padding: 3em 2em;
   background-image: url("../../assets/img/Home/Desktop/CywarImg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100%;
   text-align: left;
+  position: relative;
 }
-.cywar__img {
+.cywar__img-beyond {
+  height: 100%;
+  -webkit-transform: rotate(-18deg);
+  -moz-transform: rotate(-18deg);
+  -ms-transform: rotate(-18deg);
+  -o-transform: rotate(-18deg);
+  transform: rotate(-18deg);
+  position: absolute;
+  right: 0;
+}
+.cywar__img-between {
   width: 100%;
-  height: auto;
-  margin: 2rem 0;
   -webkit-transform: rotate(-18deg);
   -moz-transform: rotate(-18deg);
   -ms-transform: rotate(-18deg);
@@ -681,6 +681,10 @@ ul {
 .services__top {
   padding: 4em 3em 1.5em;
   text-align: left;
+}
+.services .heading {
+  font-size: 2rem;
+  text-align: center !important;
 }
 
 .about {

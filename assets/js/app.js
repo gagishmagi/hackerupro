@@ -132,8 +132,10 @@ $(document).ready(function() {
 function setSlickStyle(){
   if($('.slick-center').length){
     $('.full-img').removeClass('d-none')
+    $('.expert-name').removeClass('d-none')
     $('.all-card').addClass('d-none')
     $('.slick-center').find('.full-img').addClass('d-none');
+    $('.slick-center').find('.expert-name').addClass('d-none');
     $('.slick-center').find('.all-card').removeClass('d-none');
     $('.slick-center').css('z-index','1');
     $('.all-card.d-none').parents('.expert-card').css('z-index','-1');

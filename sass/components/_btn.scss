@@ -14,14 +14,14 @@
 
     &--full {
         background-color: $color-cyan;
-        color: $color-dark;
-        border-color: transparent;
+        color: #000;
+        border: 2px solid $color-cyan;
     }
-
+    
     &--full:hover{
-        background-color: transparent;
-        border-color: $color-light;
-        color: $color-light;
+        background-color: #fff;
+        color: #1565c0;
+        border: 2px solid #1565c0;
     }
 
     &--ghost {

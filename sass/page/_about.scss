@@ -3,12 +3,17 @@
     background-image:
     linear-gradient(to bottom, rgba($color-light, .8), rgba($color-light, .8)),
     url("../../assets/img/Home/Desktop/who\ are\ we\ img.png");
-    background-size: contain;
+    background-size: unset;
     background-position: center;
     background-repeat: no-repeat;
-    // height: 496px;
+    p{
+        font-weight: 550;
+        max-width: 440px;
+        margin: auto;
+        padding: 0 20px;
+    }
 }
 
 .about > .container {
-     padding: 10% 25%;
+     padding: 50px 0;
 }

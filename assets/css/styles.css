@@ -333,13 +333,13 @@ ul {
 }
 .btn--full {
   background-color: #00ffff;
-  color: #263238;
-  border-color: transparent;
+  color: #000;
+  border: 2px solid #00ffff;
 }
 .btn--full:hover {
-  background-color: transparent;
-  border-color: #fff;
-  color: #fff;
+  background-color: #fff;
+  color: #1565c0;
+  border: 2px solid #1565c0;
 }
 .btn--ghost {
   border-color: #fff;
@@ -518,14 +518,13 @@ ul {
 
 .accordion {
   padding: 1em 1.5em;
-}
-.accordion__item {
-  background-color: rgba(0, 255, 255, 0.05);
+  width: 80%;
+  margin: 0 10%;
 }
 .accordion__btn {
   width: 100%;
-  background-color: transparent;
-  padding: 7px 20px;
+  background-color: #fff;
+  padding: 10px;
   text-align: left;
   border-radius: 30px;
   color: #1565c0;
@@ -533,13 +532,10 @@ ul {
   font-family: inherit;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 1.125em;
+  font-size: 1em;
   cursor: pointer;
   transition: all 0.2s ease-in;
   outline: 0;
-}
-.accordion__btn:hover {
-  background-color: rgba(0, 255, 255, 0.1);
 }
 .accordion__content {
   transition: max-height 0.2s ease-in-out;
@@ -634,12 +630,27 @@ ul {
     font-size: 1.2em;
   }
 }
+.careers {
+  text-align: center;
+}
+.careers h2 {
+  display: inline;
+}
+
 .choice__content {
   padding: 3em;
   text-align: center;
 }
 .choice__content .heading {
   display: inline-flex;
+}
+.choice__content p {
+  max-width: 600px;
+  font-weight: bold;
+  margin: auto;
+  color: #263238;
+  padding: 0 20px;
+  font-size: 14px;
 }
 
 @media screen and (max-width: 850px) {
@@ -690,13 +701,19 @@ ul {
 .about {
   text-align: center;
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../../assets/img/Home/Desktop/who are we img.png");
-  background-size: contain;
+  background-size: unset;
   background-position: center;
   background-repeat: no-repeat;
 }
+.about p {
+  font-weight: 550;
+  max-width: 440px;
+  margin: auto;
+  padding: 0 20px;
+}
 
 .about > .container {
-  padding: 10% 25%;
+  padding: 50px 0;
 }
 
 .customers {
@@ -706,6 +723,19 @@ ul {
 
 .experts {
   text-align: center;
+}
+.experts .blue-container {
+  position: relative;
+}
+.experts .blue-container .expert-name {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -50px;
+  z-index: 1;
+  color: #00ffff;
+  font-weight: 900;
+  width: 100%;
 }
 .experts .slick-center {
   -webkit-transform: scale(1.25);
@@ -719,11 +749,11 @@ ul {
   margin-bottom: 20px;
 }
 .experts .slick-next {
-  top: 30%;
+  top: 50%;
   right: -70px;
 }
 .experts .slick-prev {
-  top: 30%;
+  top: 50%;
   left: -70px;
 }
 .experts .container-fluid {
@@ -763,7 +793,7 @@ ul {
   position: relative;
   transition: all 0.3s ease-out;
   outline: 0;
-  padding-bottom: 20vw;
+  padding-bottom: 100px;
   cursor: pointer;
 }
 .experts .expert-card .all-card {
@@ -792,7 +822,7 @@ ul {
   display: none;
 }
 
-@media screen and (max-width: 1390px) {
+@media screen and (max-width: 1200px) {
   .experts .slick-next {
     top: 45%;
     right: -25px;
@@ -806,13 +836,6 @@ ul {
   }
   .experts .pc-experts {
     display: none;
-  }
-}
-@media screen and (min-width: 1500px) {
-  .experts .expert-card .all-card {
-    padding: 0 2vw;
-    width: 80%;
-    left: 10%;
   }
 }
 .contact {
@@ -833,6 +856,21 @@ ul {
   max-width: 300px;
   margin: 0 auto;
 }
+.contact .contact-area .icon {
+  position: relative;
+  color: #1565c0;
+  font-size: 20px;
+  margin: 12px;
+}
+.contact .contact-area .icon:hover {
+  color: #000;
+  top: -5px;
+}
+.contact .contact-area span {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
 .contact .wrapper-dropdown-3 {
   /* Size and position */
   position: relative;
@@ -843,7 +881,7 @@ ul {
   border-radius: 20px;
   outline: none;
   border: 1px solid gray;
-  padding: 5px 10px;
+  padding: 10px 10px 10px 20px;
   margin: 5px;
   text-align: left;
   font-size: 0.8em;
@@ -945,7 +983,7 @@ ul {
   border-radius: 20px;
   outline: none;
   border: 1px solid gray;
-  padding: 5px 10px;
+  padding: 10px 10px 10px 20px;
   margin: 5px;
 }
 .form__checkbox {
@@ -985,7 +1023,7 @@ ul {
   appearance: none;
   width: 100%;
   border-radius: 20px;
-  padding: 7px;
+  padding: 10px;
 }
 .form__btn:hover {
   color: #1565c0;
@@ -1054,8 +1092,8 @@ ul {
 }
 .round {
   position: relative;
-  width: 80%;
-  left: 10%;
+  width: 90%;
+  left: 5%;
   margin-top: 10px;
 }
 
@@ -1075,11 +1113,11 @@ ul {
   border: 1px solid #ccc;
   border-radius: 50%;
   cursor: pointer;
-  height: 28px;
+  height: 22px;
   left: 0;
   position: absolute;
-  top: 0;
-  width: 28px;
+  top: 5px;
+  width: 22px;
 }
 
 .round label:after {

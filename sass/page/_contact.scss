@@ -17,6 +17,24 @@
         }
     }
 
+    .contact-area{
+        .icon{
+            position: relative;
+            color: #1565c0;
+            font-size: 20px;
+            margin: 12px;
+        }
+        .icon:hover{
+            color: #000;
+            top: -5px;
+        }
+        span{
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+    }
+
     .wrapper-dropdown-3 {
         /* Size and position */
         position: relative;
@@ -28,7 +46,7 @@
         border-radius: 20px;
         outline: none;
         border: 1px solid gray;
-        padding: 5px 10px;
+        padding: 10px 10px 10px 20px;
         margin: 5px;
         text-align: left;
         font-size: 0.8em;
@@ -144,7 +162,7 @@
         border-radius: 20px;
         outline: none;
         border: 1px solid gray;
-        padding: 5px 10px;
+        padding: 10px 10px 10px 20px;
         margin: 5px;
     }
 
@@ -199,7 +217,7 @@
 
         width: 100%;
         border-radius: 20px;
-        padding: 7px;
+        padding: 10px;
     }
     &__btn:hover {
         color:$color-blue;
@@ -240,8 +258,8 @@
 
 .round {
     position: relative;
-    width: 80%;
-    left: 10%;
+    width: 90%;
+    left: 5%;
     margin-top: 10px;
   }
   .round-title{
@@ -261,11 +279,11 @@
     border: 1px solid #ccc;
     border-radius: 50%;
     cursor: pointer;
-    height: 28px;
+    height: 22px;
     left: 0;
     position: absolute;
-    top: 0;
-    width: 28px;
+    top: 5px;
+    width: 22px;
   }
   
   .round label:after {

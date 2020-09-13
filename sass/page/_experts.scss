@@ -1,4 +1,17 @@
 .experts {
+    .blue-container{
+        position: relative;
+        .expert-name{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -50px;
+            z-index: 1;
+            color: #00ffff;
+            font-weight: 900;
+            width: 100%;
+        }
+    }
 
     .slick-center {
         -webkit-transform: scale(1.25);
@@ -14,12 +27,12 @@
     }
 
     .slick-next{
-        top: 30%;
+        top: 50%;
         right: -70px;
     }
     
     .slick-prev{
-        top: 30%;
+        top: 50%;
         left: -70px;
     }
 
@@ -71,7 +84,7 @@
         position: relative;
         transition: all .3s ease-out;
         outline: 0;
-        padding-bottom: 20vw;
+        padding-bottom: 100px;
         cursor: pointer;
         
         .all-card{
@@ -112,7 +125,7 @@
 .mobile-experts{
     display: none;
 }
-@media screen and (max-width: 1390px) {
+@media screen and (max-width: 1200px) {
     .experts{
         .slick-next{
             top: 45%;
@@ -135,9 +148,9 @@
     .experts{
         .expert-card{
             .all-card{
-                padding: 0 2vw;
-                width: 80%;
-                left: 10%;
+                // padding: 0 2vw;
+                // width: 80%;
+                // left: 10%;
             }
         }
     }

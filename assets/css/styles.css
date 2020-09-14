@@ -636,6 +636,12 @@ ul {
 .careers h2 {
   display: inline;
 }
+.careers p {
+  text-align: left;
+}
+.careers .accordion-background {
+  background: #00ffff;
+}
 
 .choice__content {
   padding: 3em;

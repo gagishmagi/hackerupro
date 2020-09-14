@@ -96,15 +96,10 @@ $(document).ready(function() {
     $('.slider').slick('unslick');
     checkWidth();
   })
+  $(document).on('click','.accordion__btn',function(){
+    setPlusMinus(this);
+  })
 
-  // $('.slider2').slick({
-  //   accessibility: true,
-  //   arrows: false,
-  //   mobileFirst: true,
-  //   slidesToShow: 3.2,
-  //   autoplay: true,
-  //   autoplaySpeed: 2000
-  // });
 
   $('.slider-mobile-experts').slick({
     prevArrow:"<img class='a-left control-c prev slick-prev' src='./assets/img/Home/left.png'>",
@@ -142,7 +137,20 @@ function setSlickStyle(){
   }
 }
 
-
+function setPlusMinus(self){
+  // $('.accordion__btn i').removeClass('fa-minus-circle')
+  if(!$(self).find('i').hasClass('fa-minus-circle')){
+    $(self).find('i').addClass('fa-minus-circle');
+    if(!$(self).hasClass('accordion-background')){
+      $(self).addClass('accordion-background');
+    }
+    $(self).css('border','none')
+  } else {
+    $(self).css('border','1px solid #1565c0')
+    $(self).removeClass('accordion-background');
+    $(self).find('i').removeClass('fa-minus-circle');
+  }
+}
 
 const expertsSlides = document.querySelectorAll('.expert-card');
 $(document).on('click','.expert-card', function(){

@@ -14,7 +14,7 @@
     <title>HackerU | Solutions</title>
 </head>
 <body>
-    <header class="hero">
+    <header class="hero career">
         <nav class="nav pb-5">
         <div class="container-fluid pb-5">
             <div class="row">
@@ -25,11 +25,11 @@
                         </a>
                         <ul class="nav__menu">
                             <li class="nav__item"><a class="nav__link nav__link--active" href="./">Home</a></li>
-                            <li class="nav__item"><a class="nav__link" href="#services">Services</a></li>
-                            <li class="nav__item"><a class="nav__link" href="#cywar">Cywar</a></li>
-                            <li class="nav__item"><a class="nav__link" href="#about">About Us</a></li>
+                            <li class="nav__item"><a class="nav__link" href="./#services">Services</a></li>
+                            <li class="nav__item"><a class="nav__link" href="./#cywar">Cywar</a></li>
+                            <li class="nav__item"><a class="nav__link" href="./#about">About Us</a></li>
                             <li class="nav__item"><a class="nav__link" href="./careers.html">Career</a></li>
-                            <li class="nav__item"><a class="nav__link" href="#contact">Contact Us</a></li>
+                            <li class="nav__item"><a class="nav__link" href="./#contact">Contact Us</a></li>
                         </ul>
                         <!-- <nav role="navigation mobile-nav"> -->
                             <div id="menuToggle">
@@ -521,21 +521,31 @@
 
 
     <section class="contact">
-        <div class="container">
-
+        <div class="container-fluid contact-background-style py-4">
         <div class="row py-5">
             <div class="col-md-4"></div>
             <div class="col-md-4">
+                <h1 class="heading">
+                    Don't see A Job <span class="light"> That Fits?</span>
+                </h1>
+                <div class="my-3"><b>SEND US YOUR CV!</b></div>
+                <p class="mb-3">We're constantly expanding and would like to offer something special for brilliant individuals like you!</p>
                 <form class="" action="">
                     <input class="form__control" type="text" placeholder="Full Name*" required>
                     <input class="form__control" type="email" placeholder="Email*" required>
                     <input class="form__control" type="tel" placeholder="Phone*" required>
-                    <input class="form__control" type="text" placeholder="Country">
-                    <input class="form__control" type="text" placeholder="Title">
-                    <input class="form__control" type="text" placeholder="I want more information about">
-                    <textarea class="form__control" placeholder="Your message" name="" id="" cols="30" rows="4">
+                    <input class="form__control" type="text" placeholder="LinkedIn Profile URL">
+                    <textarea class="form__control" placeholder="Message" name="" id="" cols="30" rows="4">
                     </textarea>
-                    <input class="form__btn" type="submit" value="Send">  
+                    <div class="row">
+                        <div class="col-12 mb-3 paperclip-container">
+                            <i class="fa fa-paperclip paperclip m-3"></i>
+                            <input type="file" name="cv_file" class=" cv-file d-none">
+                            <p><strong>Attach Your CV File</strong></p>
+                            <p>(word / PDF)</p>
+                        </div>
+                    </div>
+                    <button class="form__btn sm-btn" type="submit"><b>Submit</b></button>
                 </form>
             </div>
             <div class="col-md-4"></div>
@@ -545,27 +555,27 @@
     </section>
 
 
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <a class="nav__logo" href="#home">
-                    <img class="img-responsive" src="./assets/img/Home/Desktop/logo footer.svg" alt="">
-                </a>
-            </div>
-            <div class="col-md-6">
-                <a href="#"><span>Terms of use</span></a> | <a href="#"><span>Privacy Policy</span></a>
-            </div>
-            <div class="col-md-3">
-                <div class="row">
-                    <div class="col-md-4"><a href=""><i class="fa fa-facebook"></i></a></div>
-                    <div class="col-md-4"><a href=""><i class="fa fa-youtube"></i></a></div>
-                    <div class="col-md-4"><a href=""><i class="fa fa-linkedin"></i></a></div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <a class="nav__logo" href="#home">
+                        <img class="img-responsive" src="./assets/img/Home/Desktop/logo footer.svg" alt="">
+                    </a>
+                </div>
+                <div class="col-md-6 my-4 fs-sm">
+                        <a href="#"><span>Terms of use</span></a> | <a href="#"><span>Privacy Policy</span></a>
+                </div>
+                <div class="col-md-3">
+                    <div class="row">
+                        <div class="m-2"><a href=""><i class="fa fa-facebook"></i></a></div>
+                        <div class="m-2"><a href=""><i class="fa fa-youtube"></i></a></div>
+                        <div class="m-2"><a href=""><i class="fa fa-linkedin"></i></a></div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
 
 

@@ -100,6 +100,22 @@ $(document).ready(function() {
     setPlusMinus(this);
   })
 
+$(".paperclip").click(function () {
+  $(".cv-file").trigger('click');
+});
+
+$('.cv-file').on('change', function() {
+  var val = $(this).val();
+  $(this).siblings('span').text(val);
+})
+
+$('.hero .nav__link').click(function(){
+  $('html, body').animate({
+      scrollTop: $( $(this).attr('href') ).offset().top
+  }, 500);
+  return false;
+});
+  
 
   $('.slider-mobile-experts').slick({
     prevArrow:"<img class='a-left control-c prev slick-prev' src='./assets/img/Home/left.png'>",

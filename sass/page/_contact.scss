@@ -1,4 +1,11 @@
 .contact {
+    &-background-style{
+        background-image: url(../../assets/img/Home/Desktop/header.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: #fff;
+    }
     text-align: center;
 
     &__grid {
@@ -17,6 +24,17 @@
         }
     }
 
+    .paperclip{
+        position: relative;
+        font-size: 40px;
+        cursor: pointer;
+    }
+    .paperclip:hover{
+        top: -5px;
+    }
+    .paperclip-container:hover{
+        color: #00FFFF;
+    }
     .contact-area{
         .icon{
             position: relative;
@@ -218,6 +236,9 @@
         width: 100%;
         border-radius: 20px;
         padding: 10px;
+    }
+    &__btn.sm-btn{
+        width: 50%;
     }
     &__btn:hover {
         color:$color-blue;

@@ -623,7 +623,7 @@ ul {
 }
 
 .hero.career {
-  background-image: url(../../assets/img/Home/Desktop/header.png);
+  background-image: url(../../assets/img/Career/Desktop/header.png);
 }
 
 @media screen and (max-width: 850px) {
@@ -854,7 +854,7 @@ ul {
   /* Hover state */
 }
 .contact-background-style {
-  background-image: url(../../assets/img/Home/Desktop/header.png);
+  background-image: url(../../assets/img/Career/Desktop/contact-img.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1232,6 +1232,14 @@ footer .fa {
 }
 footer .fa:hover {
   color: #00ffff;
+}
+
+footer.career {
+  background-image: url(../../assets/img/Career/Desktop/footer.png);
+  color: #000;
+}
+footer.career span, footer.career i {
+  color: #000;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -37,6 +37,7 @@
         color: #00FFFF;
     }
     .contact-area{
+        width: 100%;
         .icon{
             position: relative;
             color: #1565c0;
@@ -136,15 +137,15 @@
         background: #f3f8f8;
     }
     .wrapper-dropdown-3 .dropdown:after {
-        content: "";
-        width: 0;
-        height: 0;
-        position: absolute;
-        bottom: 100%;
-        right: 15px;
-        border-width: 0 6px 6px 6px;
-        border-style: solid;
-        border-color: #fff transparent;
+        // content: "";
+        // width: 0;
+        // height: 0;
+        // position: absolute;
+        // bottom: 100%;
+        // right: 15px;
+        // border-width: 0 6px 6px 6px;
+        // border-style: solid;
+        // border-color: #fff transparent;
     }
 
     .wrapper-dropdown-3 .dropdown:before {

@@ -356,6 +356,7 @@ ul {
   background-repeat: no-repeat;
   background-position: top;
   background-blend-mode: overlay;
+  position: relative;
 }
 .tabs__menu {
   display: flex;
@@ -449,6 +450,11 @@ ul {
 @media screen and (min-width: 850px) {
   .tabs__btn {
     padding: 0.5em 4em;
+  }
+}
+@media screen and (max-width: 850px) {
+  .tabs__wrapper {
+    background-size: 500%;
   }
 }
 .list__item {
@@ -633,6 +639,11 @@ ul {
   }
   .hero__content h1 {
     font-size: 1.2em;
+  }
+  .hero__content p {
+    width: 100%;
+    font-size: 0.8em;
+    padding: 0 50px;
   }
 }
 .careers {
@@ -885,6 +896,9 @@ ul {
 .contact .paperclip-container:hover {
   color: #00FFFF;
 }
+.contact .contact-area {
+  width: 100%;
+}
 .contact .contact-area .icon {
   position: relative;
   color: #1565c0;
@@ -969,17 +983,6 @@ ul {
 }
 .contact .wrapper-dropdown-3 .dropdown li:hover a {
   background: #f3f8f8;
-}
-.contact .wrapper-dropdown-3 .dropdown:after {
-  content: "";
-  width: 0;
-  height: 0;
-  position: absolute;
-  bottom: 100%;
-  right: 15px;
-  border-width: 0 6px 6px 6px;
-  border-style: solid;
-  border-color: #fff transparent;
 }
 .contact .wrapper-dropdown-3 .dropdown:before {
   content: "";

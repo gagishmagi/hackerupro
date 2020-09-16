@@ -37,6 +37,8 @@ function setupTabs() {
 }
 
 function checkWidth() {
+
+  $('.card--1').css('height',$('.card--2').css('height'));
   if ($(window).width() < 850) {
     $('.cywar__img-beyond')
     $('.cywar__img-between')
@@ -46,6 +48,7 @@ function checkWidth() {
     $('.card--2').parents('.col-md-6').removeClass('p-5');
     $('.card--1').parents('.col-md-6').addClass('ml-5');
     $('.card--1').parents('.col-md-6').addClass('p-0');
+    $('.card--1').parents('.col-md-6').addClass('mb-5');
     $('.card--1').parents('.col-md-6').removeClass('p-5');
     if($('.br-hide').hasClass('d-none')){
       $('.br-hide').removeClass('d-none');
@@ -97,6 +100,7 @@ function checkWidth() {
     $('.card--2').parents('.col-md-6').removeClass('mb-5');
     $('.card--2').parents('.col-md-6').addClass('p-5');
     $('.card--1').parents('.col-md-6').removeClass('ml-5');
+    $('.card--1').parents('.col-md-6').removeClass('mb-5');
     $('.card--1').parents('.col-md-6').removeClass('p-0');
     $('.card--1').parents('.col-md-6').addClass('p-5');
 

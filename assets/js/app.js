@@ -36,6 +36,30 @@ function setupTabs() {
   });
 }
 
+var modal = $("#career-modal");
+
+
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+$(document).on('click','.btn-modal',function(){
+  console.log('clicked')
+  modal.css('display','block');
+});
+
+$(document).on('click','.close-modal', function() {
+  modal.css('display','none');
+});
+$(document).on('click','.close-modal', function() {
+  modal.css('display','none');
+});
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.css('display','none');
+  }
+}
+
 function checkWidth() {
 
   $('.card--1').css('height',$('.card--2').css('height'));

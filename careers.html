@@ -176,7 +176,7 @@
                         </ul>
 
 
-                        <button class="btn btn--sm btn--full">
+                        <button class="btn btn--sm btn--full btn-modal">
                             Send your CV
                             <i class="fa fa-envelope"></i>
                         </button>
@@ -229,7 +229,7 @@
                         </ul>
 
 
-                        <button class="btn btn--sm btn--full">
+                        <button class="btn btn--sm btn--full btn-modal">
                             Send your CV
                             <i class="fa fa-envelope"></i>
                         </button>
@@ -281,7 +281,7 @@
                         </ul>
 
 
-                        <button class="btn btn--sm btn--full">
+                        <button class="btn btn--sm btn--full btn-modal">
                             Send your CV
                             <i class="fa fa-envelope"></i>
                         </button>
@@ -333,7 +333,7 @@
                         </ul>
 
 
-                        <button class="btn btn--sm btn--full">
+                        <button class="btn btn--sm btn--full btn-modal">
                             Send your CV
                             <i class="fa fa-envelope"></i>
                         </button>
@@ -385,7 +385,7 @@
                         </ul>
 
 
-                        <button class="btn btn--sm btn--full">
+                        <button class="btn btn--sm btn--full btn-modal">
                             Send your CV
                             <i class="fa fa-envelope"></i>
                         </button>
@@ -437,14 +437,38 @@
                         </ul>
 
 
-                        <button class="btn btn--sm btn--full">
+                        <button class="btn btn--sm btn--full btn-modal">
                             Send your CV
                             <i class="fa fa-envelope"></i>
                         </button>
 
 
                     </div>
-
+                    <div class="modal row" id="career-modal">
+                        <div class="card modal-content col-md-4">
+                            <span class="close-modal">&times;</span>
+                            <h1 class="heading blue">
+                                Send <span class="light"> Your CV</span>
+                            </h1>
+                            <form action="">
+                                <input class="form__control" type="text" placeholder="Full Name*" required>
+                                <input class="form__control" type="email" placeholder="Email*" required>
+                                <input class="form__control" type="tel" placeholder="Phone*" required>
+                                <input class="form__control" type="text" placeholder="LinkedIn Profile URL">
+                                <textarea class="form__control" placeholder="Cover Letter" name="" id="" cols="30" rows="4"></textarea>
+                                <textarea class="form__control" placeholder="Personal note" name="" id="" cols="30" rows="4"></textarea>
+                                <div class="row">
+                                    <div class="col-12 mb-3 paperclip-container">
+                                        <i class="fa fa-paperclip paperclip m-3"></i>
+                                        <input type="file" name="cv_file" class=" cv-file d-none">
+                                        <p><strong>Attach Your CV File</strong></p>
+                                        <p><small>(word / PDF)</small></p>
+                                    </div>
+                                </div>
+                                <button class="form__btn sm-btn" type="submit"><b>Submit</b></button>
+                            </form>
+                        </div>
+                    </div>
 
 
 
@@ -489,7 +513,7 @@
                         </ul>
 
 
-                        <button class="btn btn--sm btn--full">
+                        <button class="btn btn--sm btn--full btn-modal">
                             Send your CV
                             <i class="fa fa-envelope"></i>
                         </button>
@@ -535,8 +559,7 @@
                     <input class="form__control" type="email" placeholder="Email*" required>
                     <input class="form__control" type="tel" placeholder="Phone*" required>
                     <input class="form__control" type="text" placeholder="LinkedIn Profile URL">
-                    <textarea class="form__control" placeholder="Message" name="" id="" cols="30" rows="4">
-                    </textarea>
+                    <textarea class="form__control" placeholder="Message" name="" id="" cols="30" rows="4"></textarea>
                     <div class="row">
                         <div class="col-12 mb-3 paperclip-container">
                             <i class="fa fa-paperclip paperclip m-3"></i>

@@ -589,6 +589,11 @@ ul {
   margin-right: 10px;
 }
 
+@media screen and (max-width: 850px) {
+  .accordion__inner .btn {
+    position: static;
+  }
+}
 /*
   @credit: http://css-tricks.com/glitch-effect-text-images-svg/
 
